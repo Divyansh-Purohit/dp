@@ -1,0 +1,251 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+body{
+	background-color: black;
+	
+	
+	
+}
+*{					
+	margin:0;
+	padding:0;
+	list-style: none;
+	text-decoration: none;
+}
+nav{
+	background-color: #063146;
+	width:100%;
+	height: 70px;
+	border-bottom: 2px solid white;
+}
+nav p{
+	font-family: arial;
+	color:#fff;
+	font-size: 24px;
+	line-height: 55px;
+	padding: 0px 20px;
+	float: right;
+}
+nav ul{
+	float: left;
+}
+nav ul li{
+	float: left;
+	position: relative;
+	list-style: none;
+	display: inline;
+	margin:0 0  10px 20px;
+}
+nav ul li a{
+	display: block;
+	color: white;
+	font-size: 20px;
+	padding: 22px 14px;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color:black;
+}
+nav ul li ul{
+	display: none;
+	width: 100px;
+	position: absolute;
+	background-color: #063146;
+	padding: 5px;
+	border-radius: 0 0 4px 4px;
+	border-bottom: 0;
+}
+nav ul li ul a{
+	color: white;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav ul li:hover a{
+	color: black;
+}
+nav ul li:hover{
+	background-color: #fff;
+	border-radius: 4px;
+}
+nav ul li ul li{
+	
+	width: 100px;
+	padding: 5px;
+	color: white;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	
+}
+nav ul li ul li:hover{
+	width: 80px;
+	color: white;
+	margin-left: 10px 
+}
+nav ul li ul li a{
+	font-family: arial;
+	color: white;
+	text-decoration: none;
+	padding: 12px 14px;
+}
+
+nav ul li ul a:hover{
+	background-color: white;
+	color: black;
+	border-radius: 8px;
+}
+i{
+	float: left;
+	width:40px;
+	color: black;
+	text-align: center;
+	margin:0px;	 
+	background-color:none;
+}
+.sidebar{
+	background-color: #042331;
+	position: fixed;
+	left:-250px;
+	width: 250px;
+	height: 100%;
+	transition: all .5s ease;
+	
+}
+.sidebar header{
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 24px;
+	text-align: center;
+	line-height: 70px;
+	background-color: #063146;
+	user-select: none;
+}
+.sidebar ul a{
+	height: 100%;
+	width: 100%;
+	display:block;
+	line-height: 65px;
+	font-size: 20px; 
+	color:white;
+	padding-left: 40px;
+}
+.sidebar ul li{
+	padding: 10px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s; 
+}
+.sidebar ul li:hover a{
+	padding-left: 20px;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	width:200px;
+	margin:2px;
+}
+.sidebar ul li:hover li{
+	color: balck;
+	background-color: white;
+}
+.sidebar ul a i{
+	margin-right: 16px;
+}
+#check{
+	display: none;
+}
+label #btn, label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	border-radius: 4px;
+}
+label #btn{
+	left: 10px;
+	top: 80px;
+	font-size: 35px;
+	color: white;
+	padding: 6px 12px; 
+
+}
+label #cancel{
+	z-index: 1111;
+	left: -195px;
+	top:90px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+	transition:  all .5s ease;
+}
+#check:checked ~ .sidebar{
+	left: 0;
+
+}
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+
+}
+#check:checked ~ label #cancel{
+	left: 195px;
+	opacity 0;
+}
+section{
+	background: url(Mypic.jpg) no-repeat;
+	background-position: center;	
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+
+}
+
+nav .search-box{
+	background-color: white;
+	float: center;
+	position: absolute;
+	border:1px solid white;
+	border-radius: 20px; 
+	width:430px;
+	margin-left: 5px;
+	margin-top: 10px; 
+	padding-top: 0px;
+	line-height: 40px;
+	
+}
+nav .search-txt{
+	margin: 0;
+	padding: 0;
+	width: 380px;
+	line-height: 30px;
+	border: 2px solid grey;
+	border-radius: 16px;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+nav #sb{
+	width:30px;
+	color: #063146;
+	text-align: center;
+	margin:0px;	 
+	padding: 0;
+	color:black;
+	background-color:white;
+}
+nav .search-button{
+	margin: 0;
+	padding: 0;
+	width: 350px;
+	line-height: 40px;
+	border: 2px solid white;
+	border-radius: 16px;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+#ci{
+	width:180px;
+	background-clip: #063146;
+}
+#ci li{
+	color:white;
+
+}
